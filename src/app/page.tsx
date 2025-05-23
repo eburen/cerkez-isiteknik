@@ -29,8 +29,8 @@ export default function Home() {
     },
     {
       icon: <WrenchScrewdriverIcon className="service-icon" />,
-      title: "Petek Kombi Onarım",
-      description: "Petek ve kombi sistemleri tamiri, bakımı ve yeni montaj hizmetleri.",
+      title: "Petek Değişimi ve Kombi Değişimi",
+      description: "Petek ve kombi değişimi, tamiri, bakımı ve yeni montaj hizmetleri.",
       image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop&auto=format"
     },
     {
@@ -141,8 +141,8 @@ export default function Home() {
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
                 <MapPinIcon className="h-10 w-10 md:h-12 md:w-12 text-yellow-300 mx-auto mb-3" />
-                <h3 className="text-white font-semibold text-base md:text-lg">Çerkezköy</h3>
-                <p className="text-red-100 text-sm md:text-base">Tüm Çerkezköy&apos;e hizmet veriyoruz</p>
+                <h3 className="text-white font-semibold text-base md:text-lg">Hizmet Alanı</h3>
+                <p className="text-red-100 text-sm md:text-base">Çerkezköy Kapaklı ve civar ilçeler</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
                 <ShieldCheckIcon className="h-10 w-10 md:h-12 md:w-12 text-yellow-300 mx-auto mb-3" />
@@ -377,7 +377,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Hizmet Alanı</h4>
-                    <p className="text-gray-600">Çerkezköy ve çevre ilçeler</p>
+                    <p className="text-gray-600">Çerkezköy Kapaklı ve civar ilçeler</p>
                   </div>
                 </div>
 
@@ -439,7 +439,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li>Kombi Temizliği</li>
                 <li>Petek Temizliği</li>
-                <li>Petek Kombi Onarım</li>
+                <li>Petek Değişimi ve Kombi Değişimi</li>
                 <li>Acil Servis</li>
                 <li>Bakım ve Onarım</li>
               </ul>
@@ -449,7 +449,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">İletişim</h3>
               <div className="space-y-2 text-gray-400">
                 <p>📞 {phoneNumber}</p>
-                <p>📍 Çerkezköy, Tekirdağ</p>
+                <p>📍 Çerkezköy Kapaklı ve civar ilçeler</p>
                 <p>🕐 7/24 Acil Servis</p>
                 <p>✅ Garantili Hizmet</p>
               </div>
@@ -459,7 +459,7 @@ export default function Home() {
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; 2024 Çerkezköy Isı Teknik. Tüm hakları saklıdır.</p>
             <p className="mt-2 text-sm">
-              Çerkezköy Kombi Servisi | Kazan Temizliği | Isıtma Sistemleri
+              Çerkezköy Kombi & Petek Temizliği | Petek Değişimi ve Kombi Değişimi
             </p>
           </div>
         </div>

@@ -137,7 +137,7 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Petek Kombi Onarım"
+                      "name": "Petek Değişimi ve Kombi Değişimi"
                     }
                   }
                 ]

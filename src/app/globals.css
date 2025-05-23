@@ -113,3 +113,44 @@ html {
 .section-subtitle {
   @apply text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
 }
+
+/* Mobile fixes to prevent UI crashes */
+@media (max-width: 640px) {
+  .service-card {
+    @apply p-3 text-sm;
+  }
+  
+  .service-icon {
+    @apply w-10 h-10 mb-2;
+  }
+  
+  .hero-title {
+    @apply text-2xl leading-tight;
+  }
+  
+  .btn-primary, .btn-secondary {
+    @apply text-sm px-4 py-2;
+  }
+  
+  .phone-link {
+    @apply text-lg;
+  }
+}
+
+/* Prevent text overflow */
+.text-balance {
+  text-wrap: balance;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+  .container-custom {
+    @apply px-3;
+  }
+  
+  .section-padding {
+    @apply py-8;
+  }
+}
