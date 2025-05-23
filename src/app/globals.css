@@ -94,11 +94,11 @@ html {
 
 /* Service card styling */
 .service-card {
-  @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-6 border border-gray-100;
+  @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-4 md:p-6 border border-gray-100;
 }
 
 .service-icon {
-  @apply w-16 h-16 mx-auto mb-4 text-red-600;
+  @apply w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 text-red-600;
 }
 
 /* Responsive text sizing */

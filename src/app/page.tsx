@@ -55,14 +55,16 @@ export default function Home() {
       {/* Header/Navigation */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
         <div className="container-custom">
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-between py-3 md:py-4">
             <div className="flex items-center space-x-2">
-              <FireIcon className="h-8 w-8 text-red-600" />
-              <span className="text-xl font-bold text-gray-900">
+              <FireIcon className="h-6 w-6 md:h-8 md:w-8 text-red-600" />
+              <span className="text-lg md:text-xl font-bold text-gray-900">
                 Çerkezköy Isı Teknik
               </span>
             </div>
-            <div className="hidden md:flex items-center space-x-6">
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-6">
               <a href="#hizmetler" className="text-gray-700 hover:text-red-600 transition-colors">
                 Hizmetler
               </a>
@@ -76,12 +78,19 @@ export default function Home() {
                 Hemen Ara
               </a>
             </div>
+
+            {/* Mobile Call Button */}
+            <div className="lg:hidden">
+              <a href={`tel:${phoneNumber}`} className="btn-primary text-sm px-4 py-2">
+                Ara
+              </a>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative section-padding pt-32 overflow-hidden">
+      <section className="relative section-padding pt-24 md:pt-32 overflow-hidden min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -94,51 +103,51 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-red-900/90 to-red-600/75"></div>
         </div>
 
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative z-10 w-full">
           <div className="text-center">
-            <h1 className="hero-title hero-text-shadow fade-in-up">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight hero-text-shadow fade-in-up">
               Çerkezköy&apos;ün En Güvenilir<br />
               <span className="text-yellow-300">Kombi Servisi</span>
             </h1>
-            <p className="text-xl md:text-2xl text-red-100 mt-6 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl lg:text-2xl text-red-100 mt-6 mb-8 max-w-3xl mx-auto px-4">
               7/24 acil servis ile kombilerinizi hızla onarıyor, kazan temizliği ve
               ısıtma sistemleri bakımı yapıyoruz. Uygun fiyat, garantili hizmet.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 px-4">
               <a
                 href={`tel:${phoneNumber}`}
-                className="btn-primary text-lg px-8 py-4 animate-pulse-slow"
+                className="btn-primary text-lg px-6 md:px-8 py-3 md:py-4 animate-pulse-slow w-full sm:w-auto"
               >
-                <PhoneIcon className="h-6 w-6 inline mr-2" />
+                <PhoneIcon className="h-5 w-5 md:h-6 md:w-6 inline mr-2" />
                 Hemen Ara: {phoneNumber}
               </a>
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="btn-secondary w-full sm:w-auto"
               >
-                WhatsApp ile İletişim
+                📱 WhatsApp ile İletişim
               </a>
             </div>
 
             {/* Quick Info */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <ClockIcon className="h-12 w-12 text-yellow-300 mx-auto mb-3" />
-                <h3 className="text-white font-semibold text-lg">7/24 Servis</h3>
-                <p className="text-red-100">Her gün, her saat hizmetinizdeyiz</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 px-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <ClockIcon className="h-10 w-10 md:h-12 md:w-12 text-yellow-300 mx-auto mb-3" />
+                <h3 className="text-white font-semibold text-base md:text-lg">7/24 Servis</h3>
+                <p className="text-red-100 text-sm md:text-base">Her gün, her saat hizmetinizdeyiz</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <MapPinIcon className="h-12 w-12 text-yellow-300 mx-auto mb-3" />
-                <h3 className="text-white font-semibold text-lg">Çerkezköy</h3>
-                <p className="text-red-100">Tüm Çerkezköy&apos;e hizmet veriyoruz</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <MapPinIcon className="h-10 w-10 md:h-12 md:w-12 text-yellow-300 mx-auto mb-3" />
+                <h3 className="text-white font-semibold text-base md:text-lg">Çerkezköy</h3>
+                <p className="text-red-100 text-sm md:text-base">Tüm Çerkezköy&apos;e hizmet veriyoruz</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <ShieldCheckIcon className="h-12 w-12 text-yellow-300 mx-auto mb-3" />
-                <h3 className="text-white font-semibold text-lg">Garantili</h3>
-                <p className="text-red-100">İşçilik garantisi veriyoruz</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <ShieldCheckIcon className="h-10 w-10 md:h-12 md:w-12 text-yellow-300 mx-auto mb-3" />
+                <h3 className="text-white font-semibold text-base md:text-lg">Garantili</h3>
+                <p className="text-red-100 text-sm md:text-base">İşçilik garantisi veriyoruz</p>
               </div>
             </div>
           </div>
@@ -155,10 +164,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {services.map((service, index) => (
               <div key={index} className="service-card text-center overflow-hidden">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <div className="relative h-40 md:h-48 mb-4 rounded-lg overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -167,10 +176,10 @@ export default function Home() {
                   />
                 </div>
                 {service.icon}
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm md:text-base text-gray-600">
                   {service.description}
                 </p>
               </div>
@@ -209,7 +218,7 @@ export default function Home() {
             </div>
 
             {/* Professional Team Image */}
-            <div className="relative">
+            <div className="relative lg:block hidden">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=800&fit=crop&auto=format"
@@ -218,32 +227,70 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
+            </div>
+          </div>
 
-              {/* Emergency Call Card */}
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-6 text-white shadow-2xl max-w-sm">
-                <h3 className="text-xl font-bold mb-3">Acil Durum?</h3>
-                <p className="text-red-100 mb-4 text-sm">
-                  Kombiniz arızalandı mı? Hemen arayın!
-                </p>
+          {/* Emergency Call Section - Separate and Mobile Responsive */}
+          <div className="mt-16">
+            <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-6 md:p-8 text-white shadow-2xl max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Acil Durum?</h3>
+                  <p className="text-red-100 mb-6 text-lg">
+                    Kombiniz arızalandı mı? Soğuk havada ısıtma sisteminiz çalışmıyor mu?
+                    Hemen arayın, en kısa sürede geliyoruz!
+                  </p>
 
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <ClockIcon className="h-5 w-5 text-yellow-300" />
-                    <span className="text-sm">7/24 Acil Servis</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <MapPinIcon className="h-5 w-5 text-yellow-300" />
-                    <span className="text-sm">30 Dakika İçinde</span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div className="flex items-center space-x-3">
+                      <ClockIcon className="h-6 w-6 text-yellow-300 flex-shrink-0" />
+                      <span>7/24 Acil Servis</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <MapPinIcon className="h-6 w-6 text-yellow-300 flex-shrink-0" />
+                      <span>30 Dakika İçinde</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <ShieldCheckIcon className="h-6 w-6 text-yellow-300 flex-shrink-0" />
+                      <span>Garantili Çözüm</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <WrenchScrewdriverIcon className="h-6 w-6 text-yellow-300 flex-shrink-0" />
+                      <span>Profesyonel Ekip</span>
+                    </div>
                   </div>
                 </div>
 
-                <a
-                  href={`tel:${phoneNumber}`}
-                  className="btn-secondary w-full text-center mt-4 block bg-white text-red-600 hover:bg-gray-100 text-sm py-2"
-                >
-                  <PhoneIcon className="h-4 w-4 inline mr-1" />
-                  {phoneNumber}
-                </a>
+                <div className="text-center md:text-right">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-4">
+                    <h4 className="text-yellow-300 font-semibold mb-2">Acil Arama Hattı</h4>
+                    <a
+                      href={`tel:${phoneNumber}`}
+                      className="text-3xl md:text-4xl font-bold text-white hover:text-yellow-300 transition-colors duration-300 block"
+                    >
+                      {phoneNumber}
+                    </a>
+                  </div>
+
+                  <div className="space-y-3">
+                    <a
+                      href={`tel:${phoneNumber}`}
+                      className="btn-secondary w-full bg-white text-red-600 hover:bg-gray-100 text-lg py-3"
+                    >
+                      <PhoneIcon className="h-6 w-6 inline mr-2" />
+                      Hemen Ara
+                    </a>
+
+                    <a
+                      href={`https://wa.me/${whatsappNumber}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary w-full bg-green-600 text-white hover:bg-green-700 text-lg py-3"
+                    >
+                      📱 WhatsApp
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -419,13 +466,13 @@ export default function Home() {
       </footer>
 
       {/* Fixed Call Button */}
-      <div className="fixed bottom-6 right-6 z-40">
+      <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
         <a
           href={`tel:${phoneNumber}`}
-          className="bg-red-600 hover:bg-red-700 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-pulse-slow"
+          className="bg-red-600 hover:bg-red-700 text-white p-3 md:p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-pulse-slow block"
           aria-label="Hemen Ara"
         >
-          <PhoneIcon className="h-8 w-8" />
+          <PhoneIcon className="h-6 w-6 md:h-8 md:w-8" />
         </a>
       </div>
     </div>
