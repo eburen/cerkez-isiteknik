@@ -309,8 +309,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold">15+</span>
+              <div className="bg-red-600 text-white rounded-full w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mx-auto mb-4">
+                <span className="text-xl md:text-2xl font-bold">15+</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Yıl Deneyim</h3>
               <p className="text-gray-600">
@@ -319,8 +319,8 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="bg-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold">1000+</span>
+              <div className="bg-red-600 text-white rounded-full w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mx-auto mb-4">
+                <span className="text-lg md:text-xl font-bold">1000+</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Mutlu Müşteri</h3>
               <p className="text-gray-600">
@@ -329,8 +329,8 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="bg-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold">7/24</span>
+              <div className="bg-red-600 text-white rounded-full w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mx-auto mb-4">
+                <span className="text-xl md:text-2xl font-bold">7/24</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Acil Servis</h3>
               <p className="text-gray-600">
