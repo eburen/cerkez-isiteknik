@@ -19,25 +19,25 @@ export default function Home() {
       icon: <FireIcon className="service-icon" />,
       title: "Kombi Temizliği",
       description: "Tüm marka kombi temizliği, bakımı ve servisi. Kombi verimliliğinizi artırıyoruz.",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop&auto=format"
+      image: "/kombiTemizlik.png"
     },
     {
       icon: <Cog6ToothIcon className="service-icon" />,
       title: "Petek Temizliği",
       description: "Profesyonel petek temizliği ile ısıtma veriminizi artırın ve enerji tasarrufu sağlayın.",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&auto=format"
+      image: "/petekTemizlik.png"
     },
     {
       icon: <WrenchScrewdriverIcon className="service-icon" />,
       title: "Petek Değişimi ve Kombi Değişimi",
       description: "Petek ve kombi değişimi, tamiri, bakımı ve yeni montaj hizmetleri.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop&auto=format"
+      image: "/kombiTemizlik.png"
     },
     {
       icon: <ShieldCheckIcon className="service-icon" />,
       title: "Garantili Hizmet",
       description: "Tüm işlerimizde garanti veriyoruz. Müşteri memnuniyeti önceliğimizdir.",
-      image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop&auto=format"
+      image: "/petekTemizlik.png"
     }
   ];
 
