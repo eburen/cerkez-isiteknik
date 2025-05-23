@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-red: #dc2626;
+  --primary-red-dark: #b91c1c;
+  --primary-red-light: #ef4444;
+  --secondary-red: #fca5a5;
+  --accent-orange: #ea580c;
+  --warm-gray: #78716c;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom components */
+.btn-primary {
+  @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-red-600 font-semibold py-3 px-6 rounded-lg border-2 border-red-600 transition-all duration-300 transform hover:scale-105;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.card-hover {
+  @apply transform hover:scale-105 transition-all duration-300 hover:shadow-xl;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Phone link styling */
+.phone-link {
+  @apply text-red-600 hover:text-red-700 font-bold text-xl transition-colors duration-300;
+}
+
+/* Hero section styling */
+.hero-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s infinite;
+}
+
+/* Service card styling */
+.service-card {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-6 border border-gray-100;
+}
+
+.service-icon {
+  @apply w-16 h-16 mx-auto mb-4 text-red-600;
+}
+
+/* Responsive text sizing */
+.hero-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
+}
