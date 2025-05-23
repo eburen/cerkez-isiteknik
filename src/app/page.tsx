@@ -17,20 +17,20 @@ export default function Home() {
   const services = [
     {
       icon: <FireIcon className="service-icon" />,
-      title: "Kombi Servisi",
-      description: "Tüm marka kombi tamiri, bakımı ve servisi. Arızalı kombilerinizi kısa sürede onarıyoruz.",
+      title: "Kombi Temizliği",
+      description: "Tüm marka kombi temizliği, bakımı ve servisi. Kombi verimliliğinizi artırıyoruz.",
       image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop&auto=format"
     },
     {
       icon: <Cog6ToothIcon className="service-icon" />,
-      title: "Kazan Temizliği",
-      description: "Profesyonel kazan temizliği ile ısıtma veriminizi artırın ve enerji tasarrufu sağlayın.",
+      title: "Petek Temizliği",
+      description: "Profesyonel petek temizliği ile ısıtma veriminizi artırın ve enerji tasarrufu sağlayın.",
       image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&auto=format"
     },
     {
       icon: <WrenchScrewdriverIcon className="service-icon" />,
-      title: "Kalorifer Tamiri",
-      description: "Kalorifer sistemleri tamiri, bakımı ve yeni montaj hizmetleri.",
+      title: "Petek Kombi Onarım",
+      description: "Petek ve kombi sistemleri tamiri, bakımı ve yeni montaj hizmetleri.",
       image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop&auto=format"
     },
     {
@@ -110,8 +110,8 @@ export default function Home() {
               <span className="text-yellow-300">Kombi Servisi</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-red-100 mt-6 mb-8 max-w-3xl mx-auto px-4">
-              7/24 acil servis ile kombilerinizi hızla onarıyor, kazan temizliği ve
-              ısıtma sistemleri bakımı yapıyoruz. Uygun fiyat, garantili hizmet.
+              7/24 acil servis ile kombi ve petek temizliği, petek kombi onarım
+              hizmetleri sunuyoruz. Uygun fiyat, garantili hizmet.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 px-4">
@@ -437,9 +437,9 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Kombi Servisi</li>
-                <li>Kazan Temizliği</li>
-                <li>Kalorifer Tamiri</li>
+                <li>Kombi Temizliği</li>
+                <li>Petek Temizliği</li>
+                <li>Petek Kombi Onarım</li>
                 <li>Acil Servis</li>
                 <li>Bakım ve Onarım</li>
               </ul>

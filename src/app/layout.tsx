@@ -17,16 +17,17 @@ export const metadata: Metadata = {
     default: "Çerkezköy Isı Teknik - Kombi Servisi & Kazan Temizliği",
     template: "%s | Çerkezköy Isı Teknik"
   },
-  description: "Çerkezköy'de profesyonel kombi servisi, kazan temizliği ve ısıtma sistemleri bakım hizmetleri. 7/24 acil servis. Uygun fiyat, kaliteli hizmet.",
+  description: "Çerkezköy'de profesyonel kombi temizliği, petek temizliği ve petek kombi onarım hizmetleri. 7/24 acil servis. Uygun fiyat, kaliteli hizmet.",
   keywords: [
-    "çerkezköy kombi servisi",
-    "kazan temizliği",
+    "çerkezköy kombi temizliği",
+    "petek temizliği",
+    "petek kombi onarım",
     "kombi tamiri",
     "ısıtma sistemleri",
     "acil kombi servisi",
     "çerkezköy ısı teknik",
     "kombi bakımı",
-    "kalorifer tamiri"
+    "petek bakımı"
   ],
   authors: [{ name: "Çerkezköy Isı Teknik" }],
   creator: "Çerkezköy Isı Teknik",
@@ -41,8 +42,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Çerkezköy Isı Teknik - Kombi Servisi & Kazan Temizliği",
-    description: "Çerkezköy'de profesyonel kombi servisi, kazan temizliği ve ısıtma sistemleri bakım hizmetleri. 7/24 acil servis.",
+    title: "Çerkezköy Isı Teknik - Kombi & Petek Temizliği",
+    description: "Çerkezköy'de profesyonel kombi temizliği, petek temizliği ve petek kombi onarım hizmetleri. 7/24 acil servis.",
     url: "https://cerkezisiteknik.com",
     siteName: "Çerkezköy Isı Teknik",
     locale: "tr_TR",
@@ -52,14 +53,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Çerkezköy Isı Teknik - Kombi Servisi",
+        alt: "Çerkezköy Isı Teknik - Kombi & Petek Temizliği",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Isı Teknik - Kombi Servisi & Kazan Temizliği",
-    description: "Çerkezköy'de profesyonel kombi servisi, kazan temizliği ve ısıtma sistemleri bakım hizmetleri. 7/24 acil servis.",
+    title: "Çerkezköy Isı Teknik - Kombi & Petek Temizliği",
+    description: "Çerkezköy'de profesyonel kombi temizliği, petek temizliği ve petek kombi onarım hizmetleri. 7/24 acil servis.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -94,7 +95,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Çerkezköy Isı Teknik",
-              "description": "Profesyonel kombi servisi ve kazan temizliği hizmetleri",
+              "description": "Profesyonel kombi temizliği, petek temizliği ve petek kombi onarım hizmetleri",
               "url": "https://cerkezisiteknik.com",
               "telephone": "+90 530 048 20 77",
               "address": {
@@ -122,14 +123,21 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Kombi Servisi"
+                      "name": "Kombi Temizliği"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Kazan Temizliği"
+                      "name": "Petek Temizliği"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Petek Kombi Onarım"
                     }
                   }
                 ]
