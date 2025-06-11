@@ -1,0 +1,22 @@
+{
+    "name": "Çerkezköy Isı Teknik",
+    "short_name": "Isı Teknik",
+    "description": "Profesyonel kombi temizliği, petek temizliği ve petek kombi onarım hizmetleri",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#FF4500",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        }
+    ]
+}

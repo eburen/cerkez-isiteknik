@@ -17,8 +17,8 @@ export default function Home() {
   const services = [
     {
       icon: <FireIcon className="service-icon" />,
-      title: "Kombi Temizliği",
-      description: "Tüm marka kombi temizliği, bakımı ve servisi. Kombi verimliliğinizi artırıyoruz.",
+      title: "Kombi Tamiri",
+      description: "Tüm marka kombi tamiri, bakımı ve servisi. Kombi verimliliğinizi artırıyoruz.",
       image: "/kombiTemizlik.png"
     },
     {
@@ -37,7 +37,7 @@ export default function Home() {
       icon: <ShieldCheckIcon className="service-icon" />,
       title: "Garantili Hizmet",
       description: "Tüm işlerimizde garanti veriyoruz. Müşteri memnuniyeti önceliğimizdir.",
-      image: "/petekTemizlik.png"
+      image: "/hizmetGorsel.png"
     }
   ];
 
@@ -437,7 +437,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Kombi Temizliği</li>
+                <li>Kombi Tamiri</li>
                 <li>Petek Temizliği</li>
                 <li>Petek Değişimi ve Kombi Değişimi</li>
                 <li>Acil Servis</li>

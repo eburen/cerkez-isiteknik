@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="fireGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB347;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerFire" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main flame -->
+  <path d="M16 2C12 6 8 12 8 18C8 24 11.5 28 16 28C20.5 28 24 24 24 18C24 12 20 6 16 2Z" 
+        fill="url(#fireGradient)" stroke="#E55100" stroke-width="0.5"/>
+  
+  <!-- Inner flame -->
+  <path d="M16 6C14 8 12 12 12 16C12 20 13.5 22 16 22C18.5 22 20 20 20 16C20 12 18 8 16 6Z" 
+        fill="url(#innerFire)"/>
+  
+  <!-- Core flame -->
+  <path d="M16 10C15 11 14 13 14 15C14 17 15 18 16 18C17 18 18 17 18 15C18 13 17 11 16 10Z" 
+        fill="#FFD700"/>
+  
+  <!-- Flame flickers -->
+  <path d="M18 8C19 10 20 12 19 14C18.5 15 18 14.5 17.5 13.5C17 12.5 17.5 10 18 8Z" 
+        fill="url(#fireGradient)" opacity="0.8"/>
+  
+  <path d="M14 7C13 9 12.5 11 13 12.5C13.5 13.5 14 13 14.5 12C15 11 14.5 9 14 7Z" 
+        fill="url(#fireGradient)" opacity="0.7"/>
+</svg> 
